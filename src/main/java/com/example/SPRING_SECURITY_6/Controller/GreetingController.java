@@ -9,6 +9,16 @@ public class GreetingController {
 
     @GetMapping("/hello")
     public String sayHello() {
-        return "Hellow";
+        return "Hello";
+    }
+
+    @GetMapping("/user")
+    public String userPage() {
+        return "Hello, User!";
+    }
+
+    @GetMapping("/admin")
+    public String adminPage() {
+        return "Hello, Admin!";
     }
 }
